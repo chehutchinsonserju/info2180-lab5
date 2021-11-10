@@ -1,4 +1,5 @@
-window.addEventListener('load', ()=>{
+window.addEventListener('load', ()=>
+{
 
     let sanitizedUrl;
     let sanitizedSearch;
@@ -26,7 +27,6 @@ window.addEventListener('load', ()=>{
         .then(resp => resp.text())
         .then(info => 
         {
-            result.innerHTML = '';
             result.innerHTML = info;
         })
     }

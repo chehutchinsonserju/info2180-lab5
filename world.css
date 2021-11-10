@@ -58,33 +58,23 @@ main
 #buttons
 {
         display: flex;
-        flex-flow: row nowrap;
         justify-content: center;
+        gap: 20px;
 }
 #lookup
 {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        background: #0ca382;
+        background: #15e4b7;
         color: white;
         margin-right: 5px;
         padding: 12px;
-        border-radius: 6px;
-        gap: 20px;
         border: none;
 }
 #lookupcities
 {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        background: #3067ff;
+        background: #156fe4;
         color: white;
         margin-right: 5px;
         padding: 12px;
-        border-radius: 6px;
-        gap: 20px;
         border: none;
 }
 #result

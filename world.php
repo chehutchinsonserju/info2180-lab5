@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET")
   <?php 
   }
 
-  else if ( (empty($_GET['country'])) && !isset($_GET['country']) && !isset($_GET['context'])  )
+  else if ( (empty($_GET['country'])) || !isset($_GET['country']) && !isset($_GET['context'])  )
   {
     $stmt = $conn->query("SELECT * FROM countries ");
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC); ?>
@@ -85,8 +85,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET")
       </table>
   <?php 
   }
-  
-  else if ((empty($_GET['country'])) && !isset($_GET['country']) && isset($_GET['context']) )
+
+  else if ((empty($_GET['country'])) || !isset($_GET['country']) && isset($_GET['context']) )
   {
     $stmt = $conn->query("SELECT * FROM cities ");
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);?>
